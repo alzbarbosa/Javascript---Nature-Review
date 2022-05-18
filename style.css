@@ -370,24 +370,21 @@ text-align: left;
 }
 
 @media (min-height: 900px) {
-
-  footer,
   main {
-    margin-top: 25px;
+    min-height: 800px;
   }
 
 }
 
 @media (min-height: 1100px) {
-  footer {
-    margin-top: 125px;
+  main {
+    min-height: 1000px;
   }
 }
 
 @media (min-height: 1200px) {
-
-  footer {
-    margin-top: 225px;
+  main {
+    min-height: 1200px;
   }
 }
 

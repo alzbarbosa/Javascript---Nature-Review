@@ -97,7 +97,7 @@ function getBackgroundColor(currentItem) {
         document.body.style.backgroundColor = "#45B649"
     }
      else if(currentItem === 4) {
-        document.body.style.backgroundColor = "#FFE000"
+        document.body.style.backgroundColor = "#F37335"
     }
     else if(currentItem === 5) {
         document.body.style.backgroundColor = "#c4e0e5"
