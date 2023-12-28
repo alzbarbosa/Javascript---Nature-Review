@@ -2,42 +2,46 @@
    Global styles
 ================= */
 
-*{
-    margin:0;
-    box-sizing: border-box;
-    padding: 0;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 li {
   list-style: none;
 }
 
-body {
-  background-color: #47a4f0;
-  font-family: 'Roboto', sans-serif;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-areas:
-    'navbar'
-    'mainpage'
-    'footer';
+html {
+  height: 100%;
 }
 
-h1, h2, h3 {
+body {
+  background-color: #47a4f0;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "navbar"
+    "mainpage"
+    "footer";
+}
+
+h1,
+h2,
+h3 {
   text-align: center;
 }
 
 main {
   grid-area: mainpage;
-  margin-bottom: 1em;
-  
+  /*margin-bottom: 1em;*/
 }
-
 
 .container-title {
   display: flex;
 }
-
 
 /* =================
    Navbar
@@ -76,7 +80,7 @@ main {
 }
 
 a:-webkit-any-link {
-  color:#fff;
+  color: #fff;
 }
 
 a:-webkit-any-link {
@@ -119,20 +123,6 @@ a:focus,
   width: 100%;
 }
 
-@media (min-width: 600px) {
-  .navbar {
-    flex-direction: row;
-    max-height: 100px;
-    padding: 0 30px;
-  }
-  .logo-all {
-    margin: 0;
-  }
-  .menu-items {
-    margin: 0 2.5em 0;
-  }
-}
-
 /* =================
    Footer
 ================= */
@@ -142,9 +132,9 @@ footer {
   flex-direction: column;
   background-color: #000;
   height: 100px;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  bottom: 0px;
-
 }
 
 .social-contacts {
@@ -158,7 +148,6 @@ footer {
   margin-right: 60px;
   font-size: 24px;
   color: white;
-
 }
 
 .social-contacts li:hover {
@@ -179,13 +168,11 @@ footer {
   width: 10%;
   float: left;
   padding: 20px;
-
 }
 
 .places-choice-container {
-display: flex;
-flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
 }
 
 .list-places {
@@ -195,7 +182,7 @@ flex-direction: column;
 }
 
 .places-choice-title {
-text-align: left;
+  text-align: left;
 }
 
 .list-places:hover,
@@ -238,7 +225,6 @@ text-align: left;
   background-color: #fff;
   color: rgba(0, 0, 0, 0.75);
   font-weight: 700;
-
 }
 
 .add-img {
@@ -249,7 +235,7 @@ text-align: left;
   margin: 0 auto;
 }
 
-.add-img>img {
+.add-img > img {
   width: 280px;
   border: 2px solid gold;
   box-shadow: 5px 5px 2px #ccc;
@@ -278,7 +264,7 @@ text-align: left;
 
 #city-display {
   font-size: 2rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   color: #fff;
 }
 
@@ -296,41 +282,38 @@ text-align: left;
     font-size: 18px;
     margin-right: 30px;
   }
-    #img-display {
-      width: 400px;
-      height: 266px;
-    }
-    
-    .spec-btn {
-      width: 100px;
-      height: 50px;
-    }
-    
+  #img-display {
+    width: 400px;
+    height: 266px;
+  }
+
+  .spec-btn {
+    width: 100px;
+    height: 50px;
+  }
 }
 
 @media (max-width: 700px) {
-    .main-review {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+  .main-review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .list-container {
-      display: flex;
-      flex-direction: row;
-    }
+  .list-container {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .list-places{
-      margin: 10px auto;
-    }
+  .list-places {
+    margin: 10px auto;
+  }
 
-    .side-left-rev {
-      width: 100%;
-      float: none;
-      padding: 20px;
-    
-    }
-
+  .side-left-rev {
+    width: 100%;
+    float: none;
+    padding: 20px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -360,7 +343,6 @@ text-align: left;
   .main-review {
     display: flex;
     flex-direction: column;
-
   }
 
   #img-display {
@@ -369,23 +351,23 @@ text-align: left;
   }
 }
 
-@media (min-height: 900px) {
-  main {
-    min-height: 800px;
+@media (min-width: 600px) {
+  .navbar {
+    flex-direction: row;
+    max-height: 100px;
+    padding: 0 30px;
   }
-
-}
-
-@media (min-height: 1100px) {
-  main {
-    min-height: 1000px;
+  .logo-all {
+    margin: 0;
   }
-}
-
-@media (min-height: 1200px) {
-  main {
-    min-height: 1200px;
+  .menu-items {
+    margin: 0 2.5em 0;
   }
 }
 
-
+@media (min-height: 800px) {
+  .footer {
+    position: absolute;
+    bottom: 0;
+  }
+}

@@ -1,97 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <!--human-readable text-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--maximum-scale limits user to zoom-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-    <link href="./style.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/51ff4837a4.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Andre Barbosa's portfolio showcasing nature lover's themed JavaScript projects."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/51ff4837a4.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Nature Lovers</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <!--Navbar-->
     <nav class="navbar">
-        <div class="logo-all">
-            <img class="logo-img" src="./images/javascript-logo.png" alt="logo-jascript" width=25px height="auto"/>
-            <h3 class="logo-name">JAVASCRIPT PROJECTS</h3>
-        </div>
-        <ul class="menu-items">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="https://portifolio-barbosa.netlify.app/" target="_blank">Portfolio</a></li>
-            <li><a href="https://www.linkedin.com/in/andre-barbosa-b4933114a/" target="_blank">About Me</a></li>
-        </ul>
+      <div class="logo-all">
+        <img
+          class="logo-img"
+          src="./images/javascript-logo.png"
+          alt="logo-jascript"
+          width="25px"
+          height="auto"
+        />
+        <h3 class="logo-name">JAVASCRIPT PROJECTS</h3>
+      </div>
+      <ul class="menu-items">
+        <li><a href="./index.html">Home</a></li>
+        <li>
+          <a href="https://portifolio-barbosa.netlify.app/" target="_blank"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/andre-barbosa-b4933114a/"
+            target="_blank"
+            >About Me</a
+          >
+        </li>
+      </ul>
     </nav>
+
+    <!--Main Content-->
     <main class="main-review">
-            <aside class="side-left-rev">
-            <div class="places-choice-container">
-            <h3 class="places-choice-title">Places</h3>
-            <ul class="list-container">
-                <li id="place-one" class="list-places"></li>
-                <li id="place-two" class="list-places"></li>
-                <li id="place-three" class="list-places"></li>
-                <li id="place-four" class="list-places"></li>
-                <li id="place-five" class="list-places"></li>
-            </ul>
-            </div>
-            </aside>
-            <section class="side-right-rev">
-                <h1 class="title-app">Nature Lovers</h1>
-                <h2 id="place-display"></h2>
-                <img id="img-display" src="#" alt="" width="280" height="180" />
-                <div class="details-display">
-                    <p id="info-display"></p>
-                </div>
-                <div class="review-btn">
-                    <button class="spec-btn" id="prev-btn">Preview</button>
-                    <button class="spec-btn" id="more-btn">Show more Pictures</button>
-                    <button class="spec-btn" id="next-btn">Next</button>
-                </div>
-                <div class="add-img">
-                    <img class="img-small" id="img-addone" src="#" alt="" width="280" height="180" />
-                    <img class="img-small" id="img-addtwo" src="#" alt="" width="280" height="180" />
-                    <img class="img-small" id="img-addthree" src="#" alt="" width="280" height="180" />
-                    <img class="img-small" id="img-addfour" src="#" alt="" width="280" height="180" />
-                    <img class="img-small" id="img-addfive" src="#" alt="" width="280" height="180" />
-                </div>
-            </section>
+      <!--Sidebar-->
+      <aside class="side-left-rev">
+        <div class="places-choice-container">
+          <h3 class="places-choice-title">Places</h3>
+          <ul class="list-container" id="list-of-places"></ul>
+        </div>
+      </aside>
+
+      <!--Center Content-->
+      <section class="side-right-rev">
+        <h1 class="title-app">Nature Lovers</h1>
+        <h2 id="place-display"></h2>
+        <img id="img-display" src="#" alt="" width="280" height="180" />
+        <div class="details-display">
+          <p id="info-display"></p>
+        </div>
+        <div class="review-btn">
+          <button class="spec-btn" id="prev-btn">Preview</button>
+          <button class="spec-btn" id="more-btn">Show more Pictures</button>
+          <button class="spec-btn" id="next-btn">Next</button>
+        </div>
+        <div class="add-img" id="additional-images"></div>
+      </section>
     </main>
+
+    <!--Footer-->
     <footer>
-        <ul class="social-contacts">
-            <li>
-                <a href="https://www.linkedin.com/in/andre-barbosa-b4933114a/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-        
-                    LinkedIn</a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/profile.php?id=100022024270844" target="_blank">
-                    <i class="fab fa-facebook"></i>
-        
-                    Facebook</a>
-            </li>
-            <li>
-                <a href="https://github.com/alzbarbosa" target="_blank">
-                    <i class="fab fa-github"></i>
-        
-                    Github</a>
-            </li>
-        
-            <li>
-                <a href="https://codepen.io/aquarius83" target="_blank">
-                    <i class="fab fa-codepen"></i>
-        
-                    CodePen</a>
-            </li>
-        </ul>
-        <h6 class="footer">&copy; 2022 Andre Barbosa</h6>
-        
+      <ul class="social-contacts">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/andre-barbosa-b4933114a/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+
+            LinkedIn</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/profile.php?id=100022024270844"
+            target="_blank"
+          >
+            <i class="fab fa-facebook"></i>
+
+            Facebook</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/alzbarbosa" target="_blank">
+            <i class="fab fa-github"></i>
+
+            Github</a
+          >
+        </li>
+
+        <li>
+          <a href="https://codepen.io/aquarius83" target="_blank">
+            <i class="fab fa-codepen"></i>
+
+            CodePen</a
+          >
+        </li>
+      </ul>
+      <h6 class="footer">&copy; 2023 Andre Barbosa</h6>
     </footer>
     <script src="./index.js"></script>
-</body>
-
+  </body>
 </html>

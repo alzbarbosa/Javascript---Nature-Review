@@ -1,233 +1,241 @@
 const places = [
-    {
-        id: 1,
-        place: "Lakes",
-        img: "./images/lake1.jpg",
-        imgone: "./images/lake2.jpg",
-        imgtwo: "./images/lake3.jpg",
-        imgthree: "./images/lake4.jpg",
-        imgfour: "./images/lake5.jpg",
-        imgfive: "./images/lake6.jpg",
-       info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolore cumque sit iste minus laudantium dolor magnam amet modi suscipit fugiat nemo doloribus recusandae, eveniet reiciendis reprehenderit autem repudiandae laboriosam error aliquam id accusantium possimus illo fugit? Repellat, deleniti dolor!"
-    },
-    {
-        id: 2,
-        place: "Mountains",
-        img: "./images/mountain1.jpg",
-        imgone: "./images/mountain2.jpg",
-        imgtwo: "./images/mountain3.jpg",
-        imgthree: "./images/mountain4.jpg",
-        imgfour: "./images/mountain5.jpg",
-        imgfive: "./images/mountain6.jpg",
-        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolore cumque sit iste minus laudantium dolor magnam amet modi suscipit fugiat nemo doloribus recusandae, eveniet reiciendis reprehenderit autem repudiandae laboriosam error aliquam id accusantium possimus illo fugit? Repellat, deleniti dolor!"
-    },
-    {
-        id: 3,
-        place: "Beachs",
-        img: "./images/beach1.jpg",
-        imgone: "./images/beach2.jpg",
-        imgtwo: "./images/beach3.jpg",
-        imgthree: "./images/beach4.jpg",
-        imgfour: "./images/beach5.jpg",
-        imgfive: "./images/beach6.jpg",
-       info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolore cumque sit iste minus laudantium dolor magnam amet modi suscipit fugiat nemo doloribus recusandae, eveniet reiciendis reprehenderit autem repudiandae laboriosam error aliquam id accusantium possimus illo fugit? Repellat, deleniti dolor!"
-    },
-    {
-        id: 4,
-        place: "Parks",
-        img: "./images/park1.jpg",
-        imgone: "./images/park2.jpg",
-        imgtwo: "./images/park3.jpg",
-        imgthree: "./images/park4.jpg",
-        imgfour: "./images/park5.jpg",
-        imgfive: "./images/park6.jpg",
-        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolore cumque sit iste minus laudantium dolor magnam amet modi suscipit fugiat nemo doloribus recusandae, eveniet reiciendis reprehenderit autem repudiandae laboriosam error aliquam id accusantium possimus illo fugit? Repellat, deleniti dolor!"
-    },
-    {
-        id: 5,
-        place: "Deserts",
-        img: "./images/desert1.jpg",
-        imgone: "./images/desert2.jpg",
-        imgtwo: "./images/desert3.jpg",
-        imgthree: "./images/desert4.jpg",
-        imgfour: "./images/desert5.jpg",
-        imgfive: "./images/desert6.jpg",
-        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolore cumque sit iste minus laudantium dolor magnam amet modi suscipit fugiat nemo doloribus recusandae, eveniet reiciendis reprehenderit autem repudiandae laboriosam error aliquam id accusantium possimus illo fugit? Repellat, deleniti dolor!"
-    },
-    {
-        id: 6,
-        place: "Waterfalls",
-        img: "./images/waterfall1.jpg",
-        imgone: "./images/waterfall2.jpg",
-        imgtwo: "./images/waterfall3.jpg",
-        imgthree: "./images/waterfall4.jpg",
-        imgfour: "./images/waterfall5.jpg",
-        imgfive: "./images/waterfall6.jpg",
-        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolore cumque sit iste minus laudantium dolor magnam amet modi suscipit fugiat nemo doloribus recusandae, eveniet reiciendis reprehenderit autem repudiandae laboriosam error aliquam id accusantium possimus illo fugit? Repellat, deleniti dolor!"
-    },
+  {
+    id: 1,
+    place: "Lakes",
+    images: [
+      "./images/lake1.jpg",
+      "./images/lake2.jpg",
+      "./images/lake3.jpg",
+      "./images/lake4.jpg",
+      "./images/lake5.jpg",
+      "./images/lake6.jpg",
+    ],
+    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+  },
+  {
+    id: 2,
+    place: "Mountains",
+    images: [
+      "./images/mountain1.jpg",
+      "./images/mountain2.jpg",
+      "./images/mountain3.jpg",
+      "./images/mountain4.jpg",
+      "./images/mountain5.jpg",
+      "./images/mountain6.jpg",
+    ],
+    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+  },
+  {
+    id: 3,
+    place: "Beaches",
+    images: [
+      "./images/beach1.jpg",
+      "./images/beach2.jpg",
+      "./images/beach3.jpg",
+      "./images/beach4.jpg",
+      "./images/beach5.jpg",
+      "./images/beach6.jpg",
+    ],
+    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+  },
+  {
+    id: 4,
+    place: "Parks",
+    images: [
+      "./images/park1.jpg",
+      "./images/park2.jpg",
+      "./images/park3.jpg",
+      "./images/park4.jpg",
+      "./images/park5.jpg",
+      "./images/park6.jpg",
+    ],
+    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+  },
+  {
+    id: 5,
+    place: "Deserts",
+    images: [
+      "./images/desert1.jpg",
+      "./images/desert2.jpg",
+      "./images/desert3.jpg",
+      "./images/desert4.jpg",
+      "./images/desert5.jpg",
+      "./images/desert6.jpg",
+    ],
+    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+  },
+  {
+    id: 6,
+    place: "Waterfalls",
+    images: [
+      "./images/waterfall1.jpg",
+      "./images/waterfall2.jpg",
+      "./images/waterfall3.jpg",
+      "./images/waterfall4.jpg",
+      "./images/waterfall5.jpg",
+      "./images/waterfall6.jpg",
+    ],
+    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+  },
+];
 
-]
+const placeDisplay = document.getElementById("place-display");
+const infoDisplay = document.getElementById("info-display");
 
-const imgDisplay = document.getElementById("img-display")
-const placeDisplay = document.getElementById("place-display")
-const infoDisplay = document.getElementById("info-display")
+const additionalImagesContainer = document.getElementById("additional-images");
 
-const imgAddOne = document.getElementById("img-addone")
-const imgAddTwo = document.getElementById("img-addtwo")
-const imgAddThree = document.getElementById("img-addthree")
-const imgAddFour = document.getElementById("img-addfour")
-const imgAddFive = document.getElementById("img-addfive")
+const nextBtn = document.getElementById("next-btn");
+const prevBtn = document.getElementById("prev-btn");
+const moreBtn = document.getElementById("more-btn");
+const addImg = document.querySelector(".add-img");
 
-const nextBtn = document.getElementById("next-btn")
-const prevBtn = document.getElementById("prev-btn")
-const moreBtn = document.getElementById("more-btn")
-const addImg = document.querySelector(".add-img")
+const sidebarToggle = document.querySelector(".sidebar-toggle");
+const closeBtn = document.querySelector(".close-btn");
+const sidebarOpt = document.querySelector(".sidebar-opt");
 
-function getBackgroundColor(currentItem) {
-    if(currentItem === 0) {
-        document.body.style.backgroundColor = "#00B4DB"
-    }
-     else if(currentItem === 1) {
-        document.body.style.backgroundColor = "#a2ab58"
-    }
-     else if(currentItem === 2) {
-        document.body.style.backgroundColor = "#FDC830"
-    }
-     else if(currentItem === 3) {
-        document.body.style.backgroundColor = "#45B649"
-    }
-     else if(currentItem === 4) {
-        document.body.style.backgroundColor = "#F37335"
-    }
-    else if(currentItem === 5) {
-        document.body.style.backgroundColor = "#c4e0e5"
-    }
-    else {
-        document.body.style.backgroundColor = "white"
-    }
-    
-}
+const backgroundColors = [
+  "#00B4DB",
+  "#a2ab58",
+  "#FDC830",
+  "#45B649",
+  "#F37335",
+  "#c4e0e5",
+  "white", // Default color
+];
 
 let currentItem = 0;
-window.addEventListener("DOMContentLoaded", function() {
-    const item = places[currentItem]
-    imgDisplay.src = item.img
-    placeDisplay.textContent = item.place
-    infoDisplay.textContent = item.info
-    getBackgroundColor(currentItem)
-})
+let currentImageIndex = 0;
+
+function getBackgroundColor(currentItem) {
+  document.body.style.backgroundColor = backgroundColors[currentItem];
+}
 
 function showTrip(currentItem) {
-  const item = places[currentItem]
-    addImg.style.visibility = "hidden"
-    imgDisplay.src = item.img
-    placeDisplay.textContent = item.place
-    infoDisplay.textContent = item.info  
-    getBackgroundColor(currentItem)
+  const item = places[currentItem];
+  addImg.style.visibility = "hidden";
+  showImageForCurrentPlace();
+  placeDisplay.textContent = item.place;
+  infoDisplay.textContent = item.info;
+  getBackgroundColor(currentItem);
 }
-
-nextBtn.addEventListener("click", function() {
-    currentItem ++
-    addImg.style.visibility = "hidden"
-    if (currentItem>places.length-1) {
-        currentItem=0
-    }
-    showTrip(currentItem)
-})
-
-prevBtn.addEventListener("click", function() {
-    currentItem--
-    addImg.style.visibility = "hidden"
-    if (currentItem<0) {
-        currentItem=places.length-1
-    }
-    showTrip(currentItem)
-})
 
 function getExtraImages() {
-imgDisplay.src = places[currentItem].img
-imgAddOne.src = places[currentItem].imgone
-imgAddTwo.src = places[currentItem].imgtwo
-imgAddThree.src = places[currentItem].imgthree
-imgAddFour.src = places[currentItem].imgfour
-imgAddFive.src = places[currentItem].imgfive   
+  additionalImagesContainer.innerHTML = ""; // Clear any existing images
+
+  // Exclude the current image index from the thumbnails
+  const otherImages = places[currentItem].images.filter(
+    (_, index) => index !== currentImageIndex
+  );
+
+  otherImages.forEach((image, index) => {
+    const imgElement = document.createElement("img");
+    imgElement.className = "img-small";
+    imgElement.id = `img-add${index + 1}`;
+    imgElement.src = image;
+    imgElement.alt = `Image ${index + 1}`;
+    imgElement.width = 280;
+    imgElement.height = 180;
+
+    // Set up the click event listener for each image
+    imgElement.addEventListener("click", function () {
+      swapImage(image, index);
+    });
+
+    // Append the image to the container
+    additionalImagesContainer.appendChild(imgElement);
+  });
 }
 
-moreBtn.addEventListener("click", function() {
-addImg.style.visibility = "visible"
-getExtraImages()
+function swapImage(newSrc, index) {
+  // This function would swap the large image with the clicked thumbnail
+  // and possibly other related tasks
+  const imgDisplay = document.getElementById("img-display"); // Your large image element ID
+  const oldSrc = imgDisplay.src;
 
-})
+  // Swap the images
+  imgDisplay.src = newSrc;
 
+  // If you need to swap the small image with the one in the display
+  document.getElementById(`img-add${index}`).src = oldSrc;
+}
 
-const placeOne = document.getElementById("place-one")
-const placeTwo = document.getElementById("place-two")
-const placeThree = document.getElementById("place-three")
-const placeFour = document.getElementById("place-four")
-const placeFive = document.getElementById("place-five")
+const listContainer = document.querySelector(".list-container");
 
-placeOne.textContent = places[0].place
-placeTwo.textContent = places[1].place
-placeThree.textContent = places[2].place
-placeFour.textContent = places[3].place
-placeFive.textContent = places[4].place
+// Clear any existing content
+listContainer.innerHTML = "";
 
-const sidebarToggle = document.querySelector(".sidebar-toggle")
-const closeBtn = document.querySelector(".close-btn")
-const sidebarOpt = document.querySelector(".sidebar-opt")
+// Loop through the places array and create an li element for each place
+places.forEach((place, index) => {
+  const listItem = document.createElement("li");
+  listItem.id = `place-${index + 1}`; // This will create id's like place-1, place-2, etc.
+  listItem.className = "list-places";
+  listItem.textContent = place.place; // Set the text content to the place name
+  /*
+  listItem.addEventListener("click", function () {
+    showTrip(index); // Pass the current index to the showTrip function
+    additionalImagesContainer.innerHTML = "";
+  });
+  */
+  listContainer.appendChild(listItem); // Append the listItem to the listContainer
+});
 
-placeOne.addEventListener("click", function() {
-    currentItem = 0
-    showTrip(currentItem)
-})
-placeTwo.addEventListener("click", function() {
-    currentItem = 1
-    showTrip(currentItem)
-})
-placeThree.addEventListener("click", function() {
-    currentItem = 2
-    showTrip(currentItem)
-})
-placeFour.addEventListener("click", function() {
-    currentItem = 3
-    showTrip(currentItem)
-})
-placeFive.addEventListener("click", function() {
-    currentItem = 4
-    showTrip(currentItem)
-})
+function showImageForCurrentPlace() {
+  const imgDisplay = document.getElementById("img-display"); // Assuming this is the ID for the main image display
 
-imgAddOne.addEventListener("click", function() {
-    getExtraImages()
-    const item = places[currentItem]
-    imgDisplay.src = item.imgone
-    imgAddOne.src = item.img
+  // Set the src for the main image display to the current image
+  imgDisplay.src = places[currentItem].images[currentImageIndex];
+}
 
-})
+//Event Listeners for buttons
+nextBtn.addEventListener("click", function () {
+  // Increment the current image index
+  currentImageIndex++;
 
-imgAddTwo.addEventListener("click", function() {
-    getExtraImages()
-    const item = places[currentItem]
-    imgDisplay.src = item.imgtwo
-    imgAddTwo.src = item.img
-})
-imgAddThree.addEventListener("click", function() {
-    getExtraImages()
-    const item = places[currentItem]
-    imgDisplay.src = item.imgthree
-    imgAddThree.src = item.img
-})
-imgAddFour.addEventListener("click", function() {
-    getExtraImages()
-    const item = places[currentItem]
-    imgDisplay.src = item.imgfour
-    imgAddFour.src = item.img
-})
-imgAddFive.addEventListener("click", function() {
-    getExtraImages()
-    const item = places[currentItem]
-    imgDisplay.src = item.imgfive
-    imgAddFive.src = item.img
-})
+  // Check if the current image index exceeds the number of images for the current place
+  if (currentImageIndex >= places[currentItem].images.length) {
+    currentImageIndex = 0; // Reset back to the first image if it's the last
+  }
 
+  // Show the next image
+  showImageForCurrentPlace();
+  getExtraImages();
+});
 
+prevBtn.addEventListener("click", function () {
+  // Increment the current image index
+  currentImageIndex--;
+
+  // Check if the current image index exceeds the number of images for the current place
+  if (currentImageIndex <= 0) {
+    currentImageIndex = places[currentItem].images.length - 1; // Reset back to the first image if it's the last
+  }
+
+  // Show the next image
+  showImageForCurrentPlace();
+  getExtraImages();
+});
+
+moreBtn.addEventListener("click", function () {
+  addImg.style.visibility = "visible";
+  getExtraImages();
+});
+
+listContainer.addEventListener("click", function (event) {
+  // Use event.target to get the element that was actually clicked
+  const clickedElement = event.target;
+
+  // Check if the clickedElement or its parents have the class 'list-places'
+  if (clickedElement.classList.contains("list-places")) {
+    // Extract the index from the clicked element's id
+    const index = parseInt(clickedElement.id.split("-")[1], 10) - 1;
+    // Call the showTrip function with the extracted index
+    showTrip(index);
+    // Clear the additional images
+    additionalImagesContainer.innerHTML = "";
+  }
+});
+
+// Initial setup on DOMContentLoaded
+window.addEventListener("DOMContentLoaded", function () {
+  showTrip(currentItem);
+});
